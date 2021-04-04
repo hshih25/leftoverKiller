@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_search_ingredients">
+
+    <fragment
+        android:id="@+id/navigation_search_recipes"
+        android:name="com.example.leftoverkiller.ui.home.SearchRecipesFragment"
+        android:label="@string/title_searchByRecipes"
+        tools:layout="@layout/fragment_search_recipes" />
+
+    <fragment
+        android:id="@+id/navigation_search_ingredients"
+        android:name="com.example.leftoverkiller.ui.dashboard.SearchIngredientsFragment"
+        android:label="@string/title_SearchByIngredients"
+        tools:layout="@layout/fragment_search_ingredients" />
+
+    <fragment
+        android:id="@+id/navigation_fav_recipes"
+        android:name="com.example.leftoverkiller.ui.favorites.FavoriteRecipesFragment"
+        android:label="@string/title_favRecipes"
+        tools:layout="@layout/fragment_fav_recipes" />
+</navigation>
